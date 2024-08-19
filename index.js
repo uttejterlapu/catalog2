@@ -26,7 +26,7 @@ function recommendCrops(N, P, K, temperature, humidity, ph, rainfall) {
             Math.abs(crop.ph - ph) <= 1 &&
             Math.abs(crop.rainfall - rainfall) <= 50
         ) {
-            recommendedCrops.add(crop.name);
+            recommendedCrops.add(crop.label);
         }
     });
 

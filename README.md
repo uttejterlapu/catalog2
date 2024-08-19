@@ -57,3 +57,4 @@ The Crop and Soil Management System is a web application that helps farmers make
 ![Home Page](images/home-page.png)
 ![Results](images/results.png)
 ![Responsive Design](images/responsive-design.png)
+![Responsive Design](images/console.png)
