@@ -48,3 +48,8 @@ The Crop and Soil Management System is an application designed to help farmers m
 3. Commit your changes (`git commit -am 'Add new feature'`).
 4. Push to the branch (`git push origin feature/YourFeature`).
 5. Create a new Pull Request.
+
+
+![Home Page](images/home-page.png)
+![Results](images/results.png)
+![Responsive Design](images/responsive-design.png)
