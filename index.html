@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop and Soil Management System</title>
+    <style>
+        /* Reset some default styles */
+        body,
+        h1,
+        h2,
+        p,
+        form,
+        label,
+        input {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and overall page styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for the form and results */
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        /* Headings */
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #00ADB5;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 20px;
+            color: #222831;
+        }
+
+        /* Form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Label styling */
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #393E46;
+        }
+
+        /* Input styling */
+        input {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            width: 400px;
+        }
+
+        input:focus {
+            border-color: #00ADB5;
+            box-shadow: 0 0 5px rgba(0, 173, 181, 0.3);
+            outline: none;
+        }
+
+        /* Results styling */
+        .results {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #eeeeee;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .results p {
+            margin-bottom: 10px;
+            color: #222831;
+            font-size: 1rem;
+        }
+
+        /* Layout for form and results side by side */
+        .re {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            input {
+                font-size: 0.9rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Crop and Soil Management System</h1>
+        <div class="re">
+            <form id="cropForm">
+                <label for="N">Nitrogen level (N):</label>
+                <input type="number" id="N" name="N" required>
+
+                <label for="P">Phosphorus level (P):</label>
+                <input type="number" id="P" name="P" required>
+
+                <label for="K">Potassium level (K):</label>
+                <input type="number" id="K" name="K" required>
+
+                <label for="temperature">Temperature (°C):</label>
+                <input type="number" id="temperature" name="temperature" required>
+
+                <label for="humidity">Humidity (%):</label>
+                <input type="number" id="humidity" name="humidity" required>
+
+                <label for="ph">pH level:</label>
+                <input type="number" id="ph" name="ph" step="0.01" required>
+
+                <label for="rainfall">Rainfall (mm):</label>
+                <input type="number" id="rainfall" name="rainfall" required>
+            </form>
+
+            <div class="results" id="results"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

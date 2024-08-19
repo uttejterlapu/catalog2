@@ -1,0 +1,14 @@
+[
+    {
+        "type": "Loamy",
+        "description": "Loamy soil is a mix of sand, silt, and clay. It is fertile and well-drained."
+    },
+    {
+        "type": "Clay",
+        "description": "Clay soil is heavy and dense. It holds moisture well but drains poorly."
+    },
+    {
+        "type": "Sandy",
+        "description": "Sandy soil is light and drains quickly. It is not very fertile."
+    }
+]
